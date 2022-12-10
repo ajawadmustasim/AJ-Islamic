@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Entry</title>
+    <link rel="stylesheet" href="prayerTable.css"/>
+</head>
+<body>
+    <form action="updateRecord.php" method="post">
+        <table>
+
+            <tr>
+                <td><label for="">Date : </label></td>
+                <td><input type="date" name="prayer_date" id="prayer_date"></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Enter Fajr Time : </label></td>
+                <td><input type="time" name="fajr" id="fajr" placeholder="fajr"></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Enter Zuhar Time : </label></td>
+                <td><input type="time" name="zuhar" id="zuhar" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Enter Asr Time : </label></td>
+                <td><input type="time" name="asr" id="asr" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Enter Magirb Time : </label></td>
+                <td><input type="time" name="magrib" id="magrib" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Enter Isha Time : </label></td>
+                <td><input type="time" name="isha" id="isha" ></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Update" name="btnSubmit"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+body 
+{
+    background-image: url('art.png');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
