@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Recitation Series - AJ Islamic</title>
+    <link rel="icon" type="image/x-icon" href="../logo.jpg">
+    <link rel="stylesheet" href="../quranSeries.css">
+
+    <style>
+        #contact, #about
+        {
+            float: right;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #d1d0ee;
+        }
+        #contact:hover , #about:hover
+        {
+            background-color: #f0e49d;
+            cursor: pointer;    
+        }
+    </style>
+    
+    <script>
+
+        class List 
+        {
+            constructor(n, link) 
+            {
+                this.n = n;
+                this.link = link;
+            }
+        }
+
+        var para = [30];
+        para[0] = new List("Para 1", "Coming Soon!");
+        para[1] = new List("Para 2", "Coming Soon!");
+        para[2] = new List("Para 3", "Coming Soon!");
+        para[3] = new List("Para 4", "Coming Soon!");
+        para[4] = new List("Para 5", "Coming Soon!");
+        para[5] = new List("Para 6", "Coming Soon!");
+        para[6] = new List("Para 7", "Coming Soon!");
+        para[7] = new List("Para 8", "Coming Soon!");
+        para[8] = new List("Para 9", "Coming Soon!");
+        para[9] = new List("Para 10", "Coming Soon!");
+        para[10] = new List("Para 11", "Coming Soon!");
+        para[11] = new List("Para 12", "Coming Soon!");
+        para[12] = new List("Para 13", "Coming Soon!");
+        para[13] = new List("Para 14", "Coming Soon!");
+        para[14] = new List("Para 15", "Coming Soon!");
+        para[15] = new List("Para 16", "Coming Soon!");
+        para[16] = new List("Para 17", "Coming Soon!");
+        para[17] = new List("Para 18", "Coming Soon!");
+        para[18] = new List("Para 19", "Coming Soon!");
+        para[19] = new List("Para 20", "Coming Soon!");
+        para[20] = new List("Para 21", "Coming Soon!");
+        para[21] = new List("Para 22", "Coming Soon!");
+        para[22] = new List("Para 23", "Coming Soon!");
+        para[23] = new List("Para 24", "Coming Soon!");
+        para[24] = new List("Para 25", "Coming Soon!");
+        para[25] = new List("Para 26", "Coming Soon!");
+        para[26] = new List("Para 27", "Coming Soon!");
+        para[27] = new List("Para 28", "Coming Soon!");
+        para[28] = new List("Para 29", "https://www.youtube.com/embed/Xqf5SYtPOvI");
+        para[29] = new List("Para 30", "https://www.youtube.com/embed/eeH2xhy6H2U");
+
+        let i = 0;
+        var next = document.getElementById("next");
+        var prev = document.getAnimations("prev");
+        var q = document.getElementById("name");
+        var video = document.getElementById("video");
+        var sideButtons = document.getElementsByClassName("leftbuttons");
+
+        function home()
+        {
+            i = 0;
+            q = document.getElementById("name");
+            next = document.getElementById("next");
+            prev = document.getAnimations("prev");
+            video = document.getElementById("video");
+
+            display();
+        }
+        function Next()
+        {
+            if(i !== 29)
+            {
+                i++;
+                display();
+            }
+        }
+        function Prev()
+        {
+            if(i !== 0)
+            {
+                i--;
+                display();
+            }
+        }
+        function number(n)
+        {
+            i = n;
+            display();
+        }
+        function display()
+        {
+            for (var index = 0; index < sideButtons.length; index++) 
+            {
+                var b = sideButtons[index];
+		        b.style.backgroundColor = "white";
+            }
+
+            if(para[i].link == "Coming Soon!")
+            {
+                q.innerHTML = para[i].n +" (Coming Soon!)";
+                video.src = "";    
+            }
+            else
+            {
+                video.src = para[i].link;
+                q.innerHTML = para[i].n;
+            }
+            sideButtons[i].style.backgroundColor = "rgb(247, 240, 150)";
+        }
+
+    </script>
+    
+    <body onload="home()">
+
+        <div>
+            <a id="home" href="../index.html"><img id="h" src="../h.png" alt="home"></a>
+            <a class="rightButtons" href="../contact.html"><button id="contact">Contact Us</button></a>
+            <a class="rightButtons" href="../index.html"><button id="about">Home & About</button></a>
+        </div>
+       
+        <div class="main_buttons">
+            <h1>Quran Recitation Series</h1>
+            <a href="../quranSeries.html"> <button class="Mainbuttons">About</button></a>
+            <a href="./surahWise.html"> <button class="Mainbuttons">Surah-wise</button></a>
+            <a href="#"> <button class="Mainbuttons"  id="active">Para-wise</button></a> 
+        </div>
+
+        <div class="content">
+
+            <button id="prev" onclick="Prev()"> &lt PREVIOUS</button>
+            <quote id="name">About</quote>
+            <button id="next" onclick="Next()"> NEXT ></button><br>
+
+            <iframe id="video" width="800" height="449" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        </div>
+ 
+        <div id="sideMenu">
+                <button class="leftbuttons" onclick="number(0)">Para 1</button>
+                <button class="leftbuttons" onclick="number(1)">Para 2</button>
+                <button class="leftbuttons" onclick="number(2)">Para 3</button>
+                <button class="leftbuttons" onclick="number(3)">Para 4</button>
+                <button class="leftbuttons" onclick="number(4)">Para 5</button>
+                <button class="leftbuttons" onclick="number(5)">Para 6</button>
+                <button class="leftbuttons" onclick="number(6)">Para 7</button>
+                <button class="leftbuttons" onclick="number(7)">Para 8</button>
+                <button class="leftbuttons" onclick="number(8)">Para 9</button>
+                <button class="leftbuttons" onclick="number(9)">Para 10</button>
+                <button class="leftbuttons" onclick="number(10)">Para 11</button>
+                <button class="leftbuttons" onclick="number(11)">Para 12</button>
+                <button class="leftbuttons" onclick="number(12)">Para 13</button>
+                <button class="leftbuttons" onclick="number(13)">Para 14</button>
+                <button class="leftbuttons" onclick="number(14)">Para 15</button>
+                <button class="leftbuttons" onclick="number(15)">Para 16</button>
+                <button class="leftbuttons" onclick="number(16)">Para 17</button>
+                <button class="leftbuttons" onclick="number(17)">Para 18</button>
+                <button class="leftbuttons" onclick="number(18)">Para 19</button>
+                <button class="leftbuttons" onclick="number(19)">Para 20</button>
+                <button class="leftbuttons" onclick="number(20)">Para 21</button>
+                <button class="leftbuttons" onclick="number(21)">Para 22</button>
+                <button class="leftbuttons" onclick="number(22)">Para 23</button>
+                <button class="leftbuttons" onclick="number(23)">Para 24</button>
+                <button class="leftbuttons" onclick="number(24)">Para 25</button>
+                <button class="leftbuttons" onclick="number(25)">Para 26</button>
+                <button class="leftbuttons" onclick="number(26)">Para 27</button>
+                <button class="leftbuttons" onclick="number(27)">Para 28</button>
+                <button class="leftbuttons" onclick="number(28)">Para 29</button>
+                <button class="leftbuttons" onclick="number(29)">Para 30</button>
+        </div>
+        
+    </body>
+    </html>

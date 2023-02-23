@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Recitation Series - AJ Islamic</title>
+    <link rel="icon" type="image/x-icon" href="../logo.jpg">
+    <link rel="stylesheet" href="../quranSeries.css">
+    
+    <style>
+        #contact, #about
+        {
+            float: right;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #d1d0ee;
+        }
+        #contact:hover , #about:hover
+        {
+            background-color: #f0e49d;
+            cursor: pointer;    
+        }
+    </style>
+    
+    <script>
+
+        class List 
+        {
+            constructor(n, link) 
+            {
+                this.n = n;
+                this.link = link;
+            }
+        }
+
+        {
+        var surah = [114];
+        surah[0] = new List("1. Surah Fatiha", "https://www.youtube.com/embed/nTVNziWydhQ");
+        surah[1] = new List("2. Surah Baqara", "Coming Soon!");
+        surah[2] = new List("3. Surah Aal-e-Imran", "Coming Soon!");
+        surah[3] = new List("4. Surah Nissa", "Coming Soon!");
+        surah[4] = new List("5. Surah Maida", "Coming Soon!");
+        surah[5] = new List("6. Surah Anaam", "Coming Soon!");
+        surah[6] = new List("7. Surah Aeyraaf", "Coming Soon!");
+        surah[7] = new List("8. Surah Anfal", "Coming Soon!");
+        surah[8] = new List("9. Surah Tauba", "Coming Soon!");
+        surah[9] = new List("10. Surah Younas", "Coming Soon!");
+        surah[10] = new List("11. Surah Hood", "Coming Soon!");
+        surah[11] = new List("12. Surah Yousaf", "Coming Soon!");
+        surah[12] = new List("13. Surah Raad", "Coming Soon!");
+        surah[13] = new List("14. Surah Ibrahim", "Coming Soon!");
+        surah[14] = new List("15. Surah Hijr", "Coming Soon!");
+        surah[15] = new List("16. Surah Nahal", "Coming Soon!");
+        surah[16] = new List("17. Surah Bani Israel", "Coming Soon!");
+        surah[17] = new List("18. Surah Kahf", "Coming Soon!");
+        surah[18] = new List("19. Surah Maryam", "Coming Soon!");
+        surah[19] = new List("20. Surah Taha", "Coming Soon!");
+        surah[20] = new List("21. Surah Anbiya", "Coming Soon!");
+        surah[21] = new List("22. Surah Hajj", "Coming Soon!");
+        surah[22] = new List("23. Surah Mominoon", "Coming Soon!");
+        surah[23] = new List("24. Surah Noor", "Coming Soon!");
+        surah[24] = new List("25. Surah Furqan", "Coming Soon!");
+        surah[25] = new List("26. Surah Shooaraa", "Coming Soon!");
+        surah[26] = new List("27. Surah Namal", "Coming Soon!");
+        surah[27] = new List("28. Surah Qasass", "Coming Soon!");
+        surah[28] = new List("29. Surah Ankaboot", "Coming Soon!");
+        surah[29] = new List("30. Surah Room", "Coming Soon!");
+        surah[30] = new List("31. Surah Luqman", "Coming Soon!");
+        surah[31] = new List("32. Surah Assajdah", "Coming Soon!");
+        surah[32] = new List("33. Surah Ahzaab", "Coming Soon!");
+        surah[33] = new List("34. Surah Saba", "Coming Soon!");
+        surah[34] = new List("35. Surah Faatir", "Coming Soon!");
+        surah[35] = new List("36. Surah Yaseen", "Coming Soon!");
+        surah[36] = new List("37. Surah Saaffaat", "Coming Soon!");
+        surah[37] = new List("38. Surah Suaad", "Coming Soon!");
+        surah[38] = new List("39. Surah Zumar", "Coming Soon!");
+        surah[39] = new List("40. Surah Momin", "Coming Soon!");
+        surah[40] = new List("41. Surah Hameem Asajdah", "Coming Soon!");
+        surah[41] = new List("42. Surah Shooraa", "Coming Soon!");
+        surah[42] = new List("43. Surah Zukhruf", "Coming Soon!");
+        surah[43] = new List("44. Surah Dukhaan", "Coming Soon!");
+        surah[44] = new List("45. Surah Jasiya", "Coming Soon!");
+        surah[45] = new List("46. Surah Ehkaaf", "Coming Soon!");
+        surah[46] = new List("47. Surah Muhammad", "Coming Soon!");
+        surah[47] = new List("48. Surah Fatah", "Coming Soon!");
+        surah[48] = new List("49. Surah Hujraat", "Coming Soon!");
+        surah[49] = new List("50. Surah Qaaf", "Coming Soon!");
+        surah[50] = new List("51. Surah Zariyaat", "Coming Soon!");
+        surah[51] = new List("52. Surah Toor", "Coming Soon!");
+        surah[52] = new List("53. Surah Najam", "Coming Soon!");
+        surah[53] = new List("54. Surah Qamar", "Coming Soon!");
+        surah[54] = new List("55. Surah Rahman", "https://www.youtube.com/embed/R0vFIwLFaqA");
+        surah[55] = new List("56. Surah Waqiya", "Coming Soon!");
+        surah[56] = new List("57. Surah Hadeed", "Coming Soon!");
+        surah[57] = new List("58. Surah Mujadalah", "https://www.youtube.com/embed/TWYt2Lpz9M4");
+        surah[58] = new List("59. Surah Hashr", "Coming Soon!");
+        surah[59] = new List("60. Surah Mumtahina", "https://www.youtube.com/embed/-m_ijQikbaE");
+        surah[60] = new List("61. Surah Saff", "Coming Soon!");
+        surah[61] = new List("62. Surah Jumaa", "Coming Soon!");
+        surah[62] = new List("63. Surah Munafiqoon", "Coming Soon!");
+        surah[63] = new List("64. Surah Taghabun", "Coming Soon!");
+        surah[64] = new List("65. Surah Tallaq", "Coming Soon!");
+        surah[65] = new List("66. Surah Tehreem", "Coming Soon!");
+        surah[66] = new List("67. Surah Mulk", "https://www.youtube.com/embed/jSsgfuZfi5E");
+        surah[67] = new List("68. Surah Qalam", "https://www.youtube.com/embed/JN34SNI4AYE");
+        surah[68] = new List("69. Surah Haaqqa", "https://www.youtube.com/embed/e1HR8KXprKY");
+        surah[69] = new List("70. Surah Maarij", "https://www.youtube.com/embed/6iFwzW5QemQ");
+        surah[70] = new List("71. Surah Nooh", "https://www.youtube.com/embed/ExkdZKRQXUg");
+        surah[71] = new List("72. Surah Jinn", "https://www.youtube.com/embed/5HChYe9bCvs");
+        surah[72] = new List("73. Surah Muzammil", "https://www.youtube.com/embed/VDOcA1yZd2o");
+        surah[73] = new List("74. Surah Mudassir", "https://www.youtube.com/embed/BTcki7isuGI");
+        surah[74] = new List("75. Surah Qiyama", "https://www.youtube.com/embed/KksspvhJytE");
+        surah[75] = new List("76. Surah Dahar", "https://www.youtube.com/embed/N_J546oyf80");
+        surah[76] = new List("77. Surah Mursalat", "https://www.youtube.com/embed/0FwTlHb96Dk");
+        surah[77] = new List("78. Surah Naba", "https://www.youtube.com/embed/I0EdXX5FHq8");
+        surah[78] = new List("79. Surah Naziaat", "https://www.youtube.com/embed/zKG8q7NIGrs");
+        surah[79] = new List("80. Surah Abas", "https://www.youtube.com/embed/hBiHblG79hE");
+        surah[80] = new List("81. Surah Takveer", "https://www.youtube.com/embed/j0U3Ae61kFg");
+        surah[81] = new List("82. Surah Infitaar", "https://www.youtube.com/embed/N38zz35F6UY");
+        surah[82] = new List("83. Surah Mutafifeen", "https://www.youtube.com/embed/mOLMrXCugYM");
+        surah[83] = new List("84. Surah Inshiqaaq", "https://www.youtube.com/embed/PORftAhXFjo");
+        surah[84] = new List("85. Surah Burooj", "https://www.youtube.com/embed/iB0BhxmGRXo");
+        surah[85] = new List("86. Surah Tariq", "https://www.youtube.com/embed/U2wp6ISEa4U");
+        surah[86] = new List("87. Surah Aala", "https://www.youtube.com/embed/PKvmSPGjsQI");
+        surah[87] = new List("88. Surah Ghashiya", "https://www.youtube.com/embed/QUmHOPi8l2E");
+        surah[88] = new List("89. Surah Fajar", "https://www.youtube.com/embed/Gi8ZOaRgchs");
+        surah[89] = new List("90. Surah Balad", "https://www.youtube.com/embed/9k9IK5Q6i74");
+        surah[90] = new List("91. Surah Shams", "https://www.youtube.com/embed/hsoKtXf9Z5o");
+        surah[91] = new List("92. Surah Lail", "https://www.youtube.com/embed/MMByh-2kq6U");
+        surah[92] = new List("93. Surah Dhuha", "https://www.youtube.com/embed/OPXH5cH7cWw");
+        surah[93] = new List("94. Surah Sharah", "https://www.youtube.com/embed/3tebB_LSpsM");
+        surah[94] = new List("95. Surah Teen", "https://www.youtube.com/embed/njZquI21x24");
+        surah[95] = new List("96. Surah Alaq", "https://www.youtube.com/embed/zQZeMXztPqs");
+        surah[96] = new List("97. Surah Qadar", "https://www.youtube.com/embed/BFTosYPn_WA");
+        surah[97] = new List("98. Surah Bayyina", "https://www.youtube.com/embed/tx39oSP_7i0");
+        surah[98] = new List("99. Surah Zilzaal", "https://www.youtube.com/embed/2DaXVon5xeg");
+        surah[99] = new List("100. Surah Aadiyaat", "https://www.youtube.com/embed/uKfrJpJK4rI");
+        surah[100] = new List("101. Surah Qariya", "https://www.youtube.com/embed/J5LTx4HSrFY");
+        surah[101] = new List("102. Surah Takasur", "https://www.youtube.com/embed/bBPdppxA_r0");
+        surah[102] = new List("103. Surah Asar", "https://www.youtube.com/embed/FaufdQFMNKg");
+        surah[103] = new List("104. Surah Humaza", "https://www.youtube.com/embed/cZ4zliYmEL8");
+        surah[104] = new List("105. Surah Feel", "https://www.youtube.com/embed/baV8Qc-UC9Q");
+        surah[105] = new List("106. Surah Quraish", "https://www.youtube.com/embed/QZuh3uBWH4o");
+        surah[106] = new List("107. Surah Maoon", "https://www.youtube.com/embed/CMdVhTOzaFQ");
+        surah[107] = new List("108. Surah Kausar", "https://www.youtube.com/embed/hZFiO5TpfzE");
+        surah[108] = new List("109. Surah Kafiroon", "https://www.youtube.com/embed/gUofkUoQF44");
+        surah[109] = new List("110. Surah Nasar", "https://www.youtube.com/embed/wAZE-a0en7w");
+        surah[110] = new List("111. Surah Lahab", "https://www.youtube.com/embed/UpzQk-yU2LA");
+        surah[111] = new List("112. Surah Ikhlaas", "https://www.youtube.com/embed/BWIf-Fq28kU");
+        surah[112] = new List("113. Surah Falaq", "https://www.youtube.com/embed/T-RoxheXdNQ");
+        surah[113] = new List("114. Surah Naas", "https://www.youtube.com/embed/ArvHgMWELoI");
+        }
+
+        let i = 0;
+        var next = document.getElementById("next");
+        var prev = document.getAnimations("prev");
+        var q = document.getElementById("name");
+        var video = document.getElementById("video");
+        var sideButtons = document.getElementsByClassName("leftbuttons");
+
+        function home()
+        {
+            i = 0;
+            q = document.getElementById("name");
+            next = document.getElementById("next");
+            prev = document.getAnimations("prev");
+            video = document.getElementById("video");
+
+            display();
+        }
+        function Next()
+        {
+            if(i !== 113)
+            {
+                i++;
+                display();
+            }
+        }
+        function Prev()
+        {
+            if(i !== 0)
+            {
+                i--;
+                display();
+            }
+        }
+        function number(n)
+        {
+            i = n;
+            display();
+        }
+        function display()
+        {
+            for (var index = 0; index < sideButtons.length; index++) 
+            {
+                var b = sideButtons[index];
+		        b.style.backgroundColor = "white";
+            }
+
+            if(surah[i].link == "Coming Soon!")
+            {
+                q.innerHTML = surah[i].n +" (Coming Soon!)";
+                q.style.fontSize = "20px";
+                video.src = "";    
+            }
+            else
+            {
+                q.style.fontSize = "40px";
+                video.src = surah[i].link;
+                q.innerHTML = surah[i].n;
+            }
+            sideButtons[i].style.backgroundColor = "rgb(247, 240, 150)";
+        }
+
+    </script>
+    
+    <body onload="home()">
+
+        <div>
+            <a id="home" href="../index.html"><img id="h" src="../h.png" alt="home"></a>
+            <a class="rightButtons" href="../contact.html"><button id="contact">Contact Us</button></a>
+            <a class="rightButtons" href="../index.html"><button id="about">Home & About</button></a>
+        </div>
+       
+        <div class="main_buttons">
+            <h1>Quran Recitation Series</h1>
+            <a href="../quranSeries.html"> <button class="Mainbuttons">About</button></a>
+            <a href="#"> <button class="Mainbuttons" id="active">Surah-wise</button></a>
+            <a href="./paraWise.html"> <button class="Mainbuttons">Para-wise</button></a> 
+        </div>
+
+        <div class="content">
+
+            <button id="prev" onclick="Prev()"> &lt PREVIOUS</button>
+            <quote id="name">About</quote>
+            <button id="next" onclick="Next()"> NEXT ></button><br>
+
+            <iframe id="video" width="800" height="449" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        </div>
+ 
+        <div id="sideMenu">
+                <button class="leftbuttons" onclick="number(0)">1. Surah Fatiha</button>
+                <button class="leftbuttons" onclick="number(1)">2. Surah Baqara</button>
+                <button class="leftbuttons" onclick="number(2)">3. Surah Aal-e-Imran</button>
+                <button class="leftbuttons" onclick="number(3)">4. Surah Nissa</button>
+                <button class="leftbuttons" onclick="number(4)">5. Surah Maida</button>
+                <button class="leftbuttons" onclick="number(5)">6. Surah Anaam</button>
+                <button class="leftbuttons" onclick="number(6)">7. Surah Aeyraaf</button>
+                <button class="leftbuttons" onclick="number(7)">8. Surah Anfal</button>
+                <button class="leftbuttons" onclick="number(8)">9. Surah Tauba</button>
+                <button class="leftbuttons" onclick="number(9)">10. Surah Younas</button>
+                <button class="leftbuttons" onclick="number(10)">11. Surah Hood</button>
+                <button class="leftbuttons" onclick="number(11)">12. Surah Yousaf</button>
+                <button class="leftbuttons" onclick="number(12)">13. Surah Raad</button>
+                <button class="leftbuttons" onclick="number(13)">14. Surah Ibrahim</button>
+                <button class="leftbuttons" onclick="number(14)">15. Surah Hijr</button>
+                <button class="leftbuttons" onclick="number(15)">16. Surah Nahal</button>
+                <button class="leftbuttons" onclick="number(16)">17. Surah Bani Israel</button>
+                <button class="leftbuttons" onclick="number(17)">18. Surah Kahf</button>
+                <button class="leftbuttons" onclick="number(18)">19. Surah Maryam</button>
+                <button class="leftbuttons" onclick="number(19)">20. Surah Taha</button>
+                <button class="leftbuttons" onclick="number(20)">21. Surah Anbiya</button>
+                <button class="leftbuttons" onclick="number(21)">22. Surah Hajj</button>
+                <button class="leftbuttons" onclick="number(22)">23. Surah Mominoon</button>
+                <button class="leftbuttons" onclick="number(23)">24. Surah Noor</button>
+                <button class="leftbuttons" onclick="number(24)">25. Surah Furqan</button>
+                <button class="leftbuttons" onclick="number(25)">26. Surah Shooaraa</button>
+                <button class="leftbuttons" onclick="number(26)">27. Surah Namal</button>
+                <button class="leftbuttons" onclick="number(27)">28. Surah Qasass</button>
+                <button class="leftbuttons" onclick="number(28)">29. Surah Ankaboot</button>
+                <button class="leftbuttons" onclick="number(29)">30. Surah Room</button>
+                <button class="leftbuttons" onclick="number(30)">31. Surah Luqman</button>
+                <button class="leftbuttons" onclick="number(31)">32. Surah Assajdah</button>
+                <button class="leftbuttons" onclick="number(32)">33. Surah Ahzaab</button>
+                <button class="leftbuttons" onclick="number(33)">34. Surah Saba</button>
+                <button class="leftbuttons" onclick="number(34)">35. Surah Faatir</button>
+                <button class="leftbuttons" onclick="number(35)">36. Surah Yaseen</button>
+                <button class="leftbuttons" onclick="number(36)">37. Surah Saaffaat</button>
+                <button class="leftbuttons" onclick="number(37)">38. Surah Suaad</button>
+                <button class="leftbuttons" onclick="number(38)">39. Surah Zumar</button>
+                <button class="leftbuttons" onclick="number(39)">40. Surah Momin</button>
+                <button class="leftbuttons" onclick="number(40)">41. Surah Hameem..</button>
+                <button class="leftbuttons" onclick="number(41)">42. Surah Shooraa</button>
+                <button class="leftbuttons" onclick="number(42)">43. Surah Zukhruf</button>
+                <button class="leftbuttons" onclick="number(43)">44. Surah Dukhaan</button>
+                <button class="leftbuttons" onclick="number(44)">45. Surah Jasiya</button>
+                <button class="leftbuttons" onclick="number(45)">46. Surah Ehkaaf</button>
+                <button class="leftbuttons" onclick="number(46)">47. Surah Muhammad</button>
+                <button class="leftbuttons" onclick="number(47)">48. Surah Fatah</button>
+                <button class="leftbuttons" onclick="number(48)">49. Surah Hujraat</button>
+                <button class="leftbuttons" onclick="number(49)">50. Surah Qaaf</button>
+                <button class="leftbuttons" onclick="number(50)">51. Surah Zariyaat</button>
+                <button class="leftbuttons" onclick="number(51)">52. Surah Toor</button>
+                <button class="leftbuttons" onclick="number(52)">53. Surah Najam</button>
+                <button class="leftbuttons" onclick="number(53)">54. Surah Qamar</button>
+                <button class="leftbuttons" onclick="number(54)">55. Surah Rahman</button>
+                <button class="leftbuttons" onclick="number(55)">56. Surah Waqiya</button>
+                <button class="leftbuttons" onclick="number(56)">57. Surah Hadeed</button>
+                <button class="leftbuttons" onclick="number(57)">58. Surah Mujadalah</button>
+                <button class="leftbuttons" onclick="number(58)">59. Surah Hashr</button>
+                <button class="leftbuttons" onclick="number(59)">60. Surah Mumtahina</button>
+                <button class="leftbuttons" onclick="number(60)">61. Surah Saff</button>
+                <button class="leftbuttons" onclick="number(61)">62. Surah Jumaa</button>
+                <button class="leftbuttons" onclick="number(62)">63. Surah Munafiqoon</button>
+                <button class="leftbuttons" onclick="number(63)">64. Surah Taghabun</button>
+                <button class="leftbuttons" onclick="number(64)">65. Surah Tallaq</button>
+                <button class="leftbuttons" onclick="number(65)">66. Surah Tehreem</button>
+                <button class="leftbuttons" onclick="number(66)">67. Surah Mulk</button>
+                <button class="leftbuttons" onclick="number(67)">68. Surah Qalam</button>
+                <button class="leftbuttons" onclick="number(68)">69. Surah Haaqqa</button>
+                <button class="leftbuttons" onclick="number(69)">70. Surah Maarij</button>
+                <button class="leftbuttons" onclick="number(70)">71. Surah Nooh</button>
+                <button class="leftbuttons" onclick="number(71)">72. Surah Jinn</button>
+                <button class="leftbuttons" onclick="number(72)">73. Surah Muzammil</button>
+                <button class="leftbuttons" onclick="number(73)">74. Surah Mudassir</button>
+                <button class="leftbuttons" onclick="number(74)">75. Surah Qiyama</button>
+                <button class="leftbuttons" onclick="number(75)">76. Surah Dahar</button>
+                <button class="leftbuttons" onclick="number(76)">77. Surah Mursalat</button>
+                <button class="leftbuttons" onclick="number(77)">78. Surah Naba</button>
+                <button class="leftbuttons" onclick="number(78)">79. Surah Naziaat</button>
+                <button class="leftbuttons" onclick="number(79)">80. Surah Abas</button>
+                <button class="leftbuttons" onclick="number(80)">81. Surah Takveer</button>
+                <button class="leftbuttons" onclick="number(81)">82. Surah Infitaar</button>
+                <button class="leftbuttons" onclick="number(82)">83. Surah Mutafifeen</button>
+                <button class="leftbuttons" onclick="number(83)">84. Surah Inshiqaaq</button>
+                <button class="leftbuttons" onclick="number(84)">85. Surah Burooj</button>
+                <button class="leftbuttons" onclick="number(85)">86. Surah Tariq</button>
+                <button class="leftbuttons" onclick="number(86)">87. Surah Aala</button>
+                <button class="leftbuttons" onclick="number(87)">88. Surah Ghashiya</button>
+                <button class="leftbuttons" onclick="number(88)">89. Surah Fajar</button>
+                <button class="leftbuttons" onclick="number(89)">90. Surah Balad</button>
+                <button class="leftbuttons" onclick="number(90)">91. Surah Shams</button>
+                <button class="leftbuttons" onclick="number(91)">92. Surah Lail</button>
+                <button class="leftbuttons" onclick="number(92)">93. Surah Dhuha</button>
+                <button class="leftbuttons" onclick="number(93)">94. Surah Sharah</button>
+                <button class="leftbuttons" onclick="number(94)">95. Surah Teen</button>
+                <button class="leftbuttons" onclick="number(95)">96. Surah Alaq</button>
+                <button class="leftbuttons" onclick="number(96)">97. Surah Qadar</button>
+                <button class="leftbuttons" onclick="number(97)">98. Surah Bayyina</button>
+                <button class="leftbuttons" onclick="number(98)">99. Surah Zilzaal</button>
+                <button class="leftbuttons" onclick="number(99)">100. Surah Aadiyaat</button>              
+                <button class="leftbuttons" onclick="number(100)">101. Surah Qariya</button>
+                <button class="leftbuttons" onclick="number(101)">102. Surah Takasur</button>
+                <button class="leftbuttons" onclick="number(102)">103. Surah Asar</button>
+                <button class="leftbuttons" onclick="number(103)">104. Surah Humaza</button>
+                <button class="leftbuttons" onclick="number(104)">105. Surah Feel</button>
+                <button class="leftbuttons" onclick="number(105)">106. Surah Quraish</button>
+                <button class="leftbuttons" onclick="number(106)">107. Surah Maoon</button>
+                <button class="leftbuttons" onclick="number(107)">108. Surah Kausar</button>
+                <button class="leftbuttons" onclick="number(108)">109. Surah Kafiroon</button>
+                <button class="leftbuttons" onclick="number(109)">110. Surah Nasar</button>
+                <button class="leftbuttons" onclick="number(110)">111. Surah Lahab</button>
+                <button class="leftbuttons" onclick="number(111)">112. Surah Ikhlaas</button>
+                <button class="leftbuttons" onclick="number(112)">113. Surah Falaq</button>
+                <button class="leftbuttons" onclick="number(113)">114. Surah Naas</button>
+        </div>
+        
+    </body>
+    </html>

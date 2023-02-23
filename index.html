@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AJ Islamic Officail Website HomePage - AJawad24">
     <meta tags="description" content="AJ, AJIslamic, AhmadJawadIslamic, Islamic, IslamicChannel, IslamicWebsite, AJawad24, AhmadJawad, HafizArhamAwan, Quran, QuranRecitaion, QuranRecitaionSeries ">
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="icon" type="image/x-icon" href="./logo.jpg">
     <title>AJ Islamic</title>
-    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="./background.css">
     <style>
         h1
         {
-            font-family: Bradley Hand ITC;
+            font-family: Castellar;
             font-size: 100px;
             text-align: center;
         }
@@ -125,25 +125,46 @@
         {
             background-image: url('twitter.png');
         }
+        #contact, #about
+        {
+            float: right;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #d1d0ee;
+        }
+        #contact:hover , #about:hover
+        {
+            background-color: #f0e49d;
+            cursor: pointer;
+        }
+        #h
+        {
+            width: 7%;
+            height: 7%;
+        }
     </style>
 
 </head>
 
 <Body>
+
+    <div>
+        <a id="home" href="../index.html"><img id="h" src="./h.png" alt="home"></a>
+        <a class="rightButtons" href="./contact.html"><button id="contact">Contact Us</button></a>
+    </div>
+
     <h1>AJ Islamic</h1>
 
     <div class="main_buttons">
-        <a href="articles.html" target="_blank"> <button class="buttons">Read Articles</button></a>
+        <a href="articles.php" target="_blank"> <button class="buttons">Articles & Videos</button></a>
 
-        <a href="https://www.youtube.com/c/AJawad24/playlists?view=50&sort=dd&shelf_id=2" target="_blank"> <button class="buttons">Read/Listen Quran</button></a>
+        <a href="quranSeries.html" target="_blank"> <button class="buttons">Quran Recitation Series</button></a>
 
-        <a href="tafaseer.html" target="_blank"> <button class="buttons">Read Tafaseer</button></a>
+        <a href="tafaseer.html" target="_blank"> <button class="buttons">Quran Tafaseer</button></a>
 
         <a href="prayers.php" target="_blank"> <button class="buttons">Prayer Timings</button></a>
 
         <a href="zakat.html" target="_blank"> <button class="buttons">Zakat Calculator</button></a>
-
-        <a href="http://youtube.com/AJawad24" target="_blank"> <button class="buttons">Islamic Videos</button></a>
 
     </div>
 

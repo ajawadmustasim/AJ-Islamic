@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Recitation Series - AJ Islamic</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="./quranSeries.css">
+
+    <style>
+        #contact, #about
+        {
+            float: right;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #d1d0ee;
+        }
+        #contact:hover , #about:hover
+        {
+            background-color: #f0e49d;
+            cursor: pointer;    
+        }
+    </style>
+    
+    <script>
+
+        class List 
+        {
+            constructor(n, link) 
+            {
+                this.n = n;
+                this.link = link;
+            }
+        }
+
+        var about = [3];
+        about[0] = new List("About", "https://www.youtube.com/embed/yW66hFpk420");
+        about[1] = new List("Coming Soon!", "");
+        about[2] = new List("Coming Soon!", "")
+
+        let i = 0;
+        var next = document.getElementById("next");
+        var prev = document.getAnimations("prev");
+        var q = document.getElementById("name");
+        var video = document.getElementById("video");
+        var sideButtons = document.getElementsByClassName("leftbuttons");
+
+        function home()
+        {
+            i = 0;
+            q = document.getElementById("name");
+            next = document.getElementById("next");
+            prev = document.getAnimations("prev");
+            video = document.getElementById("video");
+
+            display();
+        }
+        function Next()
+        {
+           i++;
+           display();
+        }
+        function Prev()
+        {
+            if(i !== 0)
+            {
+                i--;
+                display();
+            }
+            if(i === 0)
+            {
+                prev.style.disabled = "true";
+            }
+        }
+        function number(n)
+        {
+            i = n;
+            display();
+        }
+        function display()
+        {
+            for (var index = 0; index < sideButtons.length; index++) 
+            {
+                var b = sideButtons[index];
+		        b.style.backgroundColor = "white";
+            }
+
+            video.src = about[i].link;
+            q.innerHTML = about[i].n;
+            sideButtons[i].style.backgroundColor = "rgb(247, 240, 150)";
+        }
+        
+    </script>
+
+    <body onload="home()">
+
+        <div>
+            <a id="home" href="./index.html"><img id="h" src="h.png" alt="home"></a>
+            <a class="rightButtons" href="./contact.html"><button id="contact">Contact Us</button></a>
+            <a class="rightButtons" href="./index.html"><button id="about">Home & About</button></a>
+        </div>
+       
+        <div class="main_buttons">
+            <h1>Quran Recitation Series</h1>
+            <a href="#"> <button class="Mainbuttons" id="active">About</button></a>
+            <a href="./Quran Series/surahWise.html"> <button class="Mainbuttons">Surah-wise</button></a>
+            <a href="./Quran Series/paraWise.html"> <button class="Mainbuttons">Para-wise</button></a> 
+        </div>
+
+        <div class="content">
+
+            <button id="prev" onclick="Prev()"> &lt PREVIOUS</button>
+            <quote id="name">About</quote>
+            <button id="next" onclick="Next()"> NEXT ></button><br>
+
+            <iframe id="video" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        </div>
+ 
+        <div id="sideMenu">
+                <button class="leftbuttons" onclick="number(0)">H M Arham Awan</button>
+                <button class="leftbuttons" onclick="number(1)">H M Abdulrehman</button>
+                <button class="leftbuttons" onclick="number(2)">H M Aly Khan</button>
+            
+        </div>
+        
+    </body>
+    </html>

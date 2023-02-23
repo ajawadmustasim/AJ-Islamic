@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <title>Zakat Calculator - AJ Islamic</title>
+
+    <script src="./zakat.js"></script> 
+
+    <style>
+        body
+        {
+        background-image: url('art.png');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: repeat-y;
+        }
+        table
+        {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 125%;
+            
+        }
+        h1
+        {
+            font-family: Castellar;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 70px;
+        }
+        #h
+        {
+            width: 7%;
+            height: 7%;
+            margin-left: 0px;
+            float:left;
+        }
+        #zakat
+        {
+            font-family: Castellar;
+            font-size: 40px;
+            text-align: center;
+            
+        }
+        #contact, #about
+        {
+            float: right;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #d1d0ee;
+        }
+        #contact:hover , #about:hover
+        {
+            background-color: #f0e49d;
+            cursor: pointer;
+        }
+        td>button
+        {
+            color: black;
+            background-color: rgb(240 228 157);
+            min-height: 40px;
+            min-width: 150px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+
+        button:hover 
+        {
+            background-color: rgb(247, 240, 150);
+        }
+        button:active 
+        {
+            color: crimson;
+            border-color: crimson;
+        }
+        #button
+        {
+            text-align: center;
+        }
+
+        #h
+        {
+            width: 7%;
+            height: 7%;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <a id="home" href="./index.html"><img id="h" src="h.png" alt="home"></a>
+        <a class="rightButtons" href="./contact.html"><button id="contact">Contact Us</button></a>
+        <a class="rightButtons" href="./index.html"><button id="about">Home & About</button></a>
+    </div><br>
+
+    <h1>Zakat Calculator</h1>
+    <table>
+        <tr>
+            <td>Gold value in Market : </td>
+            <td> <input type="number" name="goldvalue" id="goldvalue" value="0"> </td>
+            <td> 
+                <select name="marketgold" id="marketgold">
+                    <option value="tola" id="tola">-per 1 Tola-</option>
+                    <option value="gram" id="gram">-per 1 Gram-</option>
+                    <option value="kg" id="kg">-per 1 KG-</option>
+                    <option value="ounce" id="ounce">-per 1 Ounce-</option>
+                </select> 
+            </td>
+        </tr>
+        <tr>
+            <td>Silver value in Market :</td>
+            <td> <input type="number" name="silvervalue" id="silvervalue" value="0"> </td>
+            <td> 
+                <select name="marketsilver" id="marketsilver">
+                    <option value="tola" id="tola">-per 1 Tola-</option>
+                    <option value="gram" id="gram">-per 1 Gram-</option>
+                    <option value="kg" id="kg">-per 1 KG-</option>
+                    <option value="ounce" id="ounce">-per 1 Ounce-</option>
+                </select> 
+            </td>    
+        </tr>
+        
+        <tr> 
+            <td>Your Total Cash : </td>
+            <td> <input type="number" name="cash" id="cash" value="0"> </td>
+            <td>(Make sure you exclude amount of pending bills,<br> school/college fess, rent and etc.)</td>
+        </tr>
+        <tr>
+            <td>Loan Given to others : </td>
+            <td> <input type="number" name="loangiven" id="loangiven" value="0"> </td>
+        </tr>
+        <tr>
+            <td>Total Loan taken by you : </td>
+            <td> <input type="number" name="loan" id="loan" value="0"> </td>
+        </tr>
+        <tr>
+            <td>Total Gold owned : </td>
+            <td><input type="number" name="gold" id="gold" value="0"></td>
+            <td> 
+                <select name="yourgold" id="yourgold">
+                    <option value="tolas" id="tolas">-Tola(s)-</option>
+                    <option value="grams" id="grams">-Gram(s)-</option>
+                    <option value="kgs" id="kgs">-KG(s)-</option>
+                    <option value="ounces" id="ounces">-Ounce(s)-</option>
+                </select> 
+            </td>
+        </tr>
+        <tr>
+            <td>Total Silver owned : </td>
+            <td><input type="number" name="silver" id="silver" value="0"></td>
+            <td> 
+                <select name="yoursilver" id="yoursilver">
+                    <option value="tolas" id="tolas">-Tola(s)-</option>
+                    <option value="grams" id="grams">-Gram(s)-</option>
+                    <option value="kgs" id="kgs">-KG(s)-</option>
+                    <option value="ounces" id="ounces">-Ounce(s)-</option>
+                </select> 
+            </td>
+        </tr>
+        <tr>
+            <td>Mal e Tijarat : </td>
+            <td><input type="number" name="tijarat" id="tijarat" value="0"></td>
+            <td>(total worth of all things you want to sell in future)</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="button"> <button onclick="Calculate()">Calculate</button> </td>
+        </tr>
+
+    </table>
+        <p id="zakat"></p>
+        <p id="haha"></p>
+</body>
+</html>
